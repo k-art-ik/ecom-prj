@@ -1,0 +1,551 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %} Home{% endblock title %}
+
+{% block content %}
+
+    <!-------- home section start -------- -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>upto 69% offers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente eos quisquam voluptatibus, cum quod.</p>
+                <a href="" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper books-list">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide"><img  src="{% static 'assets/imgs/image/book-1.png' %}" alt=""></a>
+                    <a href="" class="swiper-slide"><img  src="{% static 'assets/imgs/image/book-2.png' %}" alt=""></a>
+                    <a href="" class="swiper-slide"><img  src="{% static 'assets/imgs/image/book-3.png' %}" alt=""></a>
+                    <a href="" class="swiper-slide"><img  src="{% static 'assets/imgs/image/book-4.png' %}" alt=""></a>
+                    <a href="" class="swiper-slide"><img  src="{% static 'assets/imgs/image/book-5.png' %}" alt=""></a>
+                    <a href="" class="swiper-slide"><img  src="{% static 'assets/imgs/image/book-6.png' %}" alt=""></a>
+                </div>
+
+                <img class="stand" src="{% static 'assets/imgs/image/stand.png' %}">
+            </div>
+        </div>
+    </section>
+    <!-------- icons section start  -------- -->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <div class="content">
+                <h3>Free Shipping</h3>
+                <p>over payment Rs.1699</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Secure Payment</h3>
+                <p>100% Secure Payment</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Easy Returns</h3>
+                <p>10 Days Returns</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24/7 Support</h3>
+                <p>Call Us At Anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------- featured section start  --------- -->
+
+    <section class="featured" id="featured">
+        <div class="heading"><span>featured books</span></div>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-1.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.499 <span>Rs.799</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-2.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.399 <span>Rs.699</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-3.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.469 <span>Rs.689</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-4.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.589 <span>Rs.799</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-5.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.489 <span>Rs.689</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-6.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.389 <span>Rs.679</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-7.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.289 <span>Rs.499</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-8.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.279 <span>Rs.489</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-9.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.589 <span>Rs.789</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-10.png' %}">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.299 <span>Rs.489</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="" class="fas fa-search"></a>
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img class="stand" src="{% static 'assets/imgs/image/book-1.png' %}" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h3>featured book</h3>
+                        <div class="price">Rs.369 <span>Rs.589</span></div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+     <!-------- news letter section start  --------- -->
+
+    <section class="newletter">
+        <form action="">
+            <h3>subscribe for latest update</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="submit" value="subscribe" class="btn">
+        </form>
+    </section>
+
+      <!-------- arrivals section start  --------- -->
+
+      <section class="arrivals" id="arrivals">
+            <div class="heading"><span>new arrivals</span></div>
+            <div class="swiper arrivals-slider">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-1.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.389 <span>Rs.569</span></div>
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-2.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.269 <span>Rs.489</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-3.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.299 <span>Rs.499</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-4.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.349 <span>Rs.529</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-5.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.359 <span>Rs.699</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper arrivals-slider">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-6.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.199 <span>Rs.389</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-7.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.349 <span>Rs.589</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-8.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.139 <span>Rs.399</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-9.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.189 <span>Rs.379</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide box">
+                        <div class="image">
+                            <img class="stand" src="{% static 'assets/imgs/image/book-10.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>new arrivals</h3>
+                            <div class="price">Rs.569 <span>Rs.799</span></div>
+                            
+                                
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+      </section>
+     <!-------- deal section start  --------- -->
+     <section class="deal">
+        <div class="content">
+            <h3>deal of the day</h3>
+            <h1>upto 50% offers</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, vero. Voluptatibus voluptates inventore nulla vel.
+            </p>
+            <a href="" class="btn">shop now</a>
+        </div>
+
+        <div class="image">
+            <img class="stand" src="{% static 'assets/imgs/image/deal-img.jpg' %}" alt="">
+        </div>
+     </section>
+
+    <!-------- review section start  --------- -->
+     <section class="reviews" id="reviews">
+        <h1 class="heading"><span>client's reviews</span></h1>
+
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">              
+
+                <div class="swiper-slide box">
+                    <img class="stand" src="{% static 'assets/imgs/image/pic-1.png' %}" alt="">
+                    <h3>john deo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img class="stand" src="{% static 'assets/imgs/image/pic-2.png' %}" alt="">
+                    <h3>john deo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img class="stand" src="{% static 'assets/imgs/image/pic-3.png' %}" alt="">
+                    <h3>john deo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img class="stand" src="{% static 'assets/imgs/image/pic-4.png' %}" alt="">
+                    <h3>john deo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img class="stand" src="{% static 'assets/imgs/image/pic-5.png' %}" alt="">
+                    <h3>john deo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img class="stand" src="{% static 'assets/imgs/image/pic-6.png' %}" alt="">
+                    <h3>john deo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </section>
+    
+
+{% endblock content %}

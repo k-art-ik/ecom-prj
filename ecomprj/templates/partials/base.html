@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------- title --------- -->
+    <title>UniSwap || {% block title %}{% endblock title %}</title>
+
+    <!-------- customer style link --------- -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    
+
+
+    <!-------- font awesome cdn link ------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------- swipper cdn link ---------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
+</head>
+
+<body>
+
+    <!--------- header section start ---------- -->
+    <header class="header">
+        <div class="header_one">
+            <a href="" class="logo"><i class="fas fa-book"> UniSwap</i></a>
+
+            <form action="" class="search-form">
+                <input id="search-box" type="search" placeholder="search here...">
+                <label for="" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+
+        <!----- navigation bar -------->
+        <div class="header_two">
+            <div class="navbar">
+                <a href="" class="btn">Browse Categories</a>
+                <a href="{% url 'core:index' %}">Home</a>
+                <a href="{% url 'core:about_us' %}">About Us</a>
+                <a href="#featured">Featured</a>
+                <a href="#arrivals">Arrivals</a>
+                <a href="#reviews">Reviews</a>
+                <a href="{% url 'core:sell' %}">Sell</a>
+                <a href="{% url 'core:contact' %}">Contact</a>
+            </div>
+        </div>
+    
+    </header>
+
+    <!-------- bottom navbar start --------- -->
+    <div class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#blogs" class="fas fa-app-store"></a>
+    </div>
+
+     <!-------- login form start --------- -->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>email</span>
+            <input type="email" class="box" placeholder="enter your email">
+            <span>password</span>
+            <input type="password" class="box" placeholder="enter your password">
+
+            <div class="check-box">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+
+            <input type="submit" value="sign in" class="btn">
+            <p>forgot password? <a href="">click here</a></p>
+            <p>dont't have an account ? <a href="">create one</a></p>
+            <p></p>
+        </form>
+    </div>
+
+
+
+    {% block content %}{% endblock content %}
+    <!-------- footer section start  --------- -->
+    
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our locations</h3>
+                <a href=""><i class="fas fa-map-marker-alt"></i>india</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>USA</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>russia</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>france</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>japan</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>africa</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href=""><i class="fas fa-arrow-right"></i>home</a>
+                <a href=""><i class="fas fa-arrow-right"></i>featured</a>
+                <a href=""><i class="fas fa-arrow-right"></i>arrivals</a>
+                <a href=""><i class="fas fa-arrow-right"></i>blogs</a>    
+            </div>
+
+            <div class="box">
+                <h3>exatra links</h3>
+                <a href=""><i class="fas fa-arrow-right"></i>account info</a>
+                <a href=""><i class="fas fa-arrow-right"></i>ordered items</a>
+                <a href=""><i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href=""><i class="fas fa-arrow-right"></i>payment method</a>
+                <a href=""><i class="fas fa-arrow-right"></i>our services</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href=""><i class="fas fa-phone"></i>+91 7699459969</a>
+                <a href=""><i class="fas fa-phone"></i>+91 6996996969</a>
+                <a href=""><i class="fas fa-envelope"></i> hkmathas6001@gmail.com</a>
+                <!-- <img src="./image/worldmap.png" alt="" class="map"> -->
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="https://www.facebook.com/onzhk.mathas.7/"><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/i_am_mathus_bab_a/"><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href="https://in.pinterest.com/kanwr420/"><i class="fa fa-square-pinterest"></i></a>
+        </div>
+
+        <div class="credit">created by <span>Kartik kanwar alone</span> | all rights reserved</div>
+    </section>
+          
+
+    <!---- swiper cdn link ---------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     
+
+     <!------- customer script link ------- -->
+     <script src="{% static 'assets/js/main.js' %}"></script>
+    
+</body>
+
+</html>
