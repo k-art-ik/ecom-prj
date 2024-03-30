@@ -31,6 +31,9 @@ html{
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
+.hidden{
+    display: none;
+}
 
 html::-webkit-scrollbar{
     width: 1rem;
@@ -43,6 +46,51 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
+
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.messages {
+    position: fixed;
+    top: 20px;
+    left: 38%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+.alert {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+    animation-duration: 0.5s;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/* Header */
 
 .header .header_one{
     display: flex;
@@ -100,6 +148,7 @@ html::-webkit-scrollbar-thumb{
     margin-left: 1.5rem;
     color: var(--black);
     cursor: pointer;
+    padding: 1rem;
 }
 
 .header .header_one .icons div:hover,
@@ -230,75 +279,37 @@ html::-webkit-scrollbar-thumb{
     }
 }
 
-/*----- login form start --------*/
-.login-form-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255,255,255,0.9);
-    position: fixed;
-    top: 0;
-    right: -105%;
-    z-index: 10000;
-    height: 100%;
-    width: 100%;
+.drop {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #59595946;
+    box-shadow: #59595946 5px 5px 5px;
+    border-radius: 15px;
+    z-index: 2;
 }
 
-.login-form-container.active{
-    right: 0;
+.drop .drop-ul{
+    padding: 1rem 3rem;
+    
 }
-
-.login-form-container form{
-    background: #fff;
-    border: var(--border);
-    width: 40rem;
-    padding: 2rem;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    margin: 2rem;
+.drop .drop-ul .drop-li{
+    padding: 1.5rem 0;
+    list-style: none;
+    border-bottom: 1px solid #59595920;
 }
-
-.login-form-container form h3{
-    font-size: 2.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--black);
+.drop .drop-ul .drop-li:last-child{
+    border: none;
 }
-
-.login-form-container form span{
-    display: block;
-    font-size: 1.5rem;
-    padding-top: 1rem;
+.drop .drop-ul .drop-li a{
+    font-size: 16px;
+    color: #444;
+    transition: .3s ease;
 }
-
-.login-form-container form .box{
-    width: 100%;
-    margin: 0.7rem 0;
-    font-size: 1.6rem;
-    border: var(--border);
-    border-radius: 0.5rem;
-    padding: 1rem 1.2rem;
-    color: var(--black);
-    text-transform: none;
-}
-
-.login-form-container form .check-box{
-    display: flex;
-    align-items:center;
-    gap: 0.5rem;
-    padding: 1rem 0;
-}
-
-.login-form-container form .check-box label{
-    font-size: 1.5rem;
-    color: var(--light-color);
-    cursor: pointer;
-}
-
-.login-form-container form .btn{
-    text-align: center;
-    width: 100%;
-    margin: 1.5rem 0;
+.drop .drop-ul .drop-li a:hover{
+    color: #0c53f9;
 }
 
 .btn{
@@ -318,25 +329,6 @@ html::-webkit-scrollbar-thumb{
     background-color: var(--dark-color);
 }
 
-
-.login-form-container form p{
-    padding-top: .8rem;
-    color: var(--light-color);
-    font-size: 1.5rem;
-}
-
-.login-form-container form p a{
-    text-decoration: underline;
-    color: var(--blue);
-}
-
-.login-form-container #close-login-btn{
-    position: absolute;
-    top: 1.5rem;
-    right: 2.5rem;
-    font-size:5rem;
-    cursor: pointer;
-}
 
 /*---- home section ----*/
 section{
@@ -817,3 +809,24 @@ section{
 .footer .credit span{
     color:var(--blue);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

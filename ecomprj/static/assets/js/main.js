@@ -6,21 +6,23 @@ document.querySelector('#search-btn').onclick = () =>{
   searchform.classList.toggle('active');
 }
 
+// Dropdown
+drop = document.querySelector(".drop");
 
-/*---- login form -------*/
+loginbtn = document.querySelector('.account');
 
-var loginForm = document.querySelector('.login-form-container');
+loginbtn.addEventListener('mouseover', function() {
+    drop.classList.toggle("hidden");
+});
 
-document.querySelector('#login-btn').onclick = () => {
-    loginForm.classList.toggle('active');
-}
+document.addEventListener('click', function(event) {
+    if (!drop.contains(event.target) && event.target !== loginbtn) {
+        drop.classList.add("hidden");
+    }
+});
 
-document.querySelector('#close-login-btn').onclick = () =>{
-    loginForm.classList.remove('active');
-}
 
 /*---- swiper  -------*/
-
 var swiper = new Swiper(".books-list", {
 
   loop:true,
